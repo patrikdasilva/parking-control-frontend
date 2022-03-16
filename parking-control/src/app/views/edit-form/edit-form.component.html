@@ -1,0 +1,60 @@
+<app-navbar></app-navbar>
+<div class="form">
+    <form [formGroup]="form" *ngIf="parkingSpot">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="">Número</label>
+                    <input type="text" formControlName="parkingSpotNumber" name="parkingSpotNumber" ng-value="parkingSpot.number">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="">Placa</label>
+                    <input type="text" formControlName="licensePlateCar" name="licensePlateCar" value="parkingSpot.licensePlate">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="">Carro</label>
+                    <input type="text" formControlName="brandCar" name="brandCar" value="parkingSpot.brand">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="">Modelo</label>
+                    <input type="text" formControlName="modelCar" name="modelCar" value="parkingSpot.model">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="">Cor</label>
+                    <input type="text" formControlName="colorCar" name="colorCar" value="parkingSpot.color">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="">Responsavel</label>
+                    <input type="text" formControlName="responsibleName" name="responsibleName" value="parkingSpot.responsible">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="">Apartamento</label>
+                    <input type="text" formControlName="apartment" name="apartment" value="parkingSpot.apartment">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="">Bloco</label>
+                    <input type="text" formControlName="block" name="block" value="parkingSpot.block">
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="text-right">
+                    <button class="btn btn-primary" >Salvar</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

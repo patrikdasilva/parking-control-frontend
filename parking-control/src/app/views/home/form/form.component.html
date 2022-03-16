@@ -1,0 +1,60 @@
+<app-navbar></app-navbar>
+<div class="form">
+    <form [formGroup]="form">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="">Número</label>
+                    <input type="text" formControlName="parkingSpotNumber" name="parkingSpotNumber">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="">Placa</label>
+                    <input type="text" formControlName="licensePlateCar" name="licensePlateCar">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="">Carro</label>
+                    <input type="text" formControlName="brandCar" name="brandCar">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="">Modelo</label>
+                    <input type="text" formControlName="modelCar" name="modelCar">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="">Cor</label>
+                    <input type="text" formControlName="colorCar" name="colorCar">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="">Responsavel</label>
+                    <input type="text" formControlName="responsibleName" name="responsibleName">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="">Apartamento</label>
+                    <input type="text" formControlName="apartment" name="apartment">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="">Bloco</label>
+                    <input type="text" formControlName="block" name="block">
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="text-right">
+                    <button class="btn btn-primary" (click)="saveParkingSpot()">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

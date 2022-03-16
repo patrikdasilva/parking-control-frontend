@@ -1,0 +1,11 @@
+
+.title {
+    background-color: rgb(43, 43, 43);
+    color: #fff;
+    padding: 10px;
+}
+
+.title h1 {
+    font-size: 20px;
+    letter-spacing: 1px;
+}

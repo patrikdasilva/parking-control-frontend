@@ -1,0 +1,40 @@
+<app-navbar></app-navbar>
+<div class="row mt-4">
+    <div class="col-12">
+        <a href="newSpot" class="btn btn-success">Novo</a>
+    </div>
+    <div class="col-12 text-center">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Vaga</th>
+                        <th>Apartamento</th>
+                        <th>Bloco</th>
+                        <th>Reponsável</th>
+                        <th>Marca do carro</th>
+                        <th>Placa</th>
+                        <th>Modelo</th>
+                        <th>Cor do carro</th>
+                        <th>Data de Registro</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let spot of parkingSpots">
+                        <td>{{spot.parkingSpotNumber}}</td>
+                        <td>{{spot.apartment}}</td>
+                        <td>{{spot.block}}</td>
+                        <td>{{spot.responsibleName}}</td>
+                        <td>{{spot.brandCar}}</td>
+                        <td>{{spot.licensePlateCar}}</td>
+                        <td>{{spot.modelCar}}</td>
+                        <td>{{spot.colorCar}}</td>
+                        <td>{{spot.registrationDate | localDateTime}}</td>
+                        <td><button class="btn btn-success" (click)="editParkingSpot(spot.id)">editar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
